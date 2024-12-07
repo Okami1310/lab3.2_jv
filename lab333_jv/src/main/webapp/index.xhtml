@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<head>
+    <title>Tabulate Function</title>
+</head>
+<body>
+<h1>Tabulate the function</h1>
+
+<h:form>
+    <h:outputLabel for="a" value="Enter a: " />
+    <h:inputText id="a" value="#{calculatorBean.a}" required="true" />
+    <br/>
+
+    <h:outputLabel for="b" value="Enter b: " />
+    <h:inputText id="b" value="#{calculatorBean.b}" required="true" />
+    <br/>
+
+    <h:outputLabel for="h" value="Enter h: " />
+    <h:inputText id="h" value="#{calculatorBean.h}" required="true" />
+    <br/>
+
+    <h:commandButton value="Tabulate" action="#{calculatorBean.tabulate}" />
+</h:form>
+</body>
+</html>
